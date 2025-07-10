@@ -17,7 +17,7 @@ const Login = () => {
                 <h1>Hello</h1>
                 <p>It's great to have you here</p>
                 <div className="input-field">
-                    <input type="text"
+                    <input type="email"
                         placeholder="user"
                         value={username}
                         onChange={(e) => (setUserName(e.target.value))} />

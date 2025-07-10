@@ -66,3 +66,29 @@ p {
     background-color: #116329;
     transition: 0.5s ease;
 }
+
+@media (max-width: 500px) {
+    .container-login {
+        width: 95vw;
+        height: auto;
+        min-height: 350px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .container-login .input-field {
+        font-size: 22px;
+        height: 40px;
+        margin: 20px auto;
+    }
+
+    .input-field input {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .button-login {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
