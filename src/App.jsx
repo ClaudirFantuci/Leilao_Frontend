@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './pages/login/Login';
 import Register from './pages/Register/Register.jsx';
 import Recover from './pages/recover/Recover.jsx';
+import Reset from './pages/reset/Reset';
 
 function App() {
 
@@ -13,8 +14,11 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/recover" element={<Recover />} />
+          <Route path="/reset" element={<Reset />} />
+
         </Routes>
       </Router>
+
     </div>
   )
 }
