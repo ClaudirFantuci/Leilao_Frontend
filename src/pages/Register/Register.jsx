@@ -5,7 +5,7 @@ const Register = () => {
     return (
         <div className='container-register'>
             <form>
-                <button className='back-arrow'><FaArrowLeft /></button>
+                <a href="/" className='back-arrow'><FaArrowLeft /></a>
 
                 <h1>Let’s get started!</h1>
                 <div className='input-field'>

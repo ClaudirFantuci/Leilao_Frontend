@@ -32,8 +32,13 @@ const Login = () => {
                     <FaKey className="icon" />
                 </div>
 
+                <div className="link-recover">
+                    <a href="/recover">Forgot password?</a>
+                </div>
+
                 <button className="button-login">Sign in</button>
-                <a href="" className="link-signUp">New here? Create an account</a> {/*adicionar link */}
+                <a href="/register" className="link-signUp"><span style={{ color: "black" }}>New here? </span>Create an account</a>
+
             </form>
         </div>
     );

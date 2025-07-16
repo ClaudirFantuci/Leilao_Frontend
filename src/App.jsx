@@ -1,14 +1,20 @@
-import './App.css'
-import Login from './pages/login/Login'
-import Register from './pages/Register/Register'
-
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from './pages/login/Login';
+import Register from './pages/Register/Register.jsx';
+import Recover from './pages/recover/Recover.jsx';
 
 function App() {
 
   return (
     <div className='App'>
-      {/* <Login /> */}
-      <Register />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/recover" element={<Recover />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
