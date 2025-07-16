@@ -38,7 +38,7 @@ Abra seu navegador e acesse:
 http://localhost:5173
 ```
 
-> ℹ️ A porta padrão do Vite é a `5173`, mas pode variar caso essa porta esteja ocupada.
+ℹ️ A porta padrão do Vite é a `5173`, mas pode variar caso essa porta esteja ocupada.
 
 
 
