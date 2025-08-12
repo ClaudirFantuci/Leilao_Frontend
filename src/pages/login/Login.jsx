@@ -2,14 +2,26 @@ import React from "react";
 import { FaUser, FaKey } from "react-icons/fa";
 import { useState } from "react";
 import "./Login.css";
+import AutenticacaoService from "../../services/autenticacaoService";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+    const autenticacaoService = new AutenticacaoService();
     const [username, setUserName] = useState("");
     const [userpassword, SetUserPassword] = useState("");
 
     const handlerLogin = (event) => {
         event.preventDefault();
-        console.log("teste", username, userpassword)
+        login();
     };
+
+    const navigate = useNavigate();
+
+    const login = async ()=>{
+        console.log(username,userpassword);
+        const resposta = await autenticacaoService.login({email:username, senha:userpassword});
+        console.log(resposta)
+    
+    }
 
     return (
         <div className="container-login">
@@ -36,7 +48,7 @@ const Login = () => {
                     <a href="/recover">Forgot password?</a>
                 </div>
 
-                <button className="button-login">Sign in</button>
+                <button className="button-login" >Sign in</button>
                 <a href="/register" className="link-signUp"><span style={{ color: "black" }}>New here? </span>Create an account</a>
 
             </form>
