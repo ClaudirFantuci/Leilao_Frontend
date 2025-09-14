@@ -1,4 +1,4 @@
-# Sistema de leilão - Frontend
+# Sistema de leilão - Frontend - Em desenvolvimento
 
 Este repositório contém o desenvolvimento do frontend de uma tela de login.  
 O projeto está sendo desenvolvido utilizando **React** e futuramente será integrado com um backend em **Java** utilizando **Spring Boot**.
